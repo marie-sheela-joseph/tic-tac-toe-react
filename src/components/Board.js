@@ -4,7 +4,7 @@ import Square from './Square'
 function Board() {
     const [squares, setSquares] = useState(Array(9).fill(null))
     const onSquareClick = (i) => {
-        console.log(i)
+        setSquares((prevState) => prevState.map((s, index) => index + 1 === i ? 'x' : s))
     }
     return (
         <div className='board'>
