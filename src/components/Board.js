@@ -3,8 +3,14 @@ import Square from './Square'
 
 function Board() {
     const [squares, setSquares] = useState(Array(9).fill(null))
+    const [xIsNext, setXIsNext] = useState(true);
     const onSquareClick = (i) => {
-        setSquares((prevState) => prevState.map((s, index) => index + 1 === i ? 'x' : s))
+        if (xIsNext) {
+            setSquares((prevState) => prevState.map((s, index) => index + 1 === i ? 'X' : s))
+        } else {
+            setSquares((prevState) => prevState.map((s, index) => index + 1 === i ? 'O' : s))
+        }
+        setXIsNext((prevState) => !prevState)
     }
     return (
         <div className='board'>
