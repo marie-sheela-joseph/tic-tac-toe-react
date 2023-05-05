@@ -1,3 +1,18 @@
+Output
+winner is X
+
+![image](https://user-images.githubusercontent.com/92960836/236449649-e888b8dc-31cf-44c6-bfcd-ea9e89e0d37e.png)
+
+
+Tie Game:
+
+![image](https://user-images.githubusercontent.com/92960836/236450052-3c09f44a-c4cc-4876-9a44-0a1eab145bac.png)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
